@@ -14,33 +14,51 @@ Detecting anomalies within point clouds is crucial for various industrial applic
 ## 🛠️ Getting Started
 
 ### Installation
+To set up the MVP-PVLIP environment, follow one of the methods below:
 
+- Clone this repo:
+  ```shell
+  git clone https://github.com/hustCYQ/MVP-PCLIP.git && cd MVP-PCLIP
+  ```
+- Construct the experimental environment, follow these steps:
+  ```shell
+  conda create -n PCLIP python=3.9.5 -y
+  conda activate PCLIP
+  pip install -r requirements.txt
+  ```
 
 
 ### Dataset Preparation 
-Please download our processed visual anomaly detection datasets to your `DATA_ROOT` as needed. 
+You can choose to download **original** datasets and process them according to **Preprocess**. You are also welcome to directly download our **processed** datasets. All datasets need to be placed in your `DATA_ROOT`. 
 
 | Dataset | Google Drive | Baidu Drive | Note
 |------------|------------------|------------------| ------------------|
-| MVTec 3D-AD    | [Google Drive]() | [Baidu Drive]() | Original |
-| Real3D-AD    | [Google Drive]() | [Baidu Drive]() | Original |
-| MVTec3D-2D    | [Google Drive]() | [Baidu Drive]() | Original |
-| Real3D-2D    | [Google Drive]() | [Baidu Drive]() | Original |
+| MVTec3D    | [Google Drive]() | [Baidu Drive]() | Original |
+| Real3D    | [Google Drive]() | [Baidu Drive]() | Original |
+| MVTec3D-multiview    | [Google Drive]() | [Baidu Drive]() | Processed |
+| Real3D-multiview    | [Google Drive]() | [Baidu Drive]() | Processed |
 
 
 
 
 
-### preprocess
+### Preprocess
+#### MVTec3D
+We remove the background and project point clouds to multi_view images.
+```
+sh process_MVTec3D.sh
+```
 
+#### Real3D
+We first convert Real3D to Depth data **.tiff file**, and then project point clouds to multi_view images.
+```
+sh process_Real3D.sh
+```
 
-
-
-### Train
-
-
-### Test
-
+### Train & Test
+```
+python run_exps.py
+```
 
 ## Main Results
 
