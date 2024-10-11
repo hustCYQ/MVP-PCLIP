@@ -213,7 +213,7 @@ def single_process(path,savepath,order,direction):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='Preprocess MVTec 3D-AD')
+    parser = argparse.ArgumentParser(description='Preprocess Real3D to .tiff')
     parser.add_argument('--root_path', type=str,
                         default='./Real3D-AD-PCD/',
                         help='The root path of the Real3D')
