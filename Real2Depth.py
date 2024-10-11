@@ -213,12 +213,12 @@ def single_process(path,savepath,order,direction):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='Preprocess Real3D to .tiff')
+    parser = argparse.ArgumentParser(description='Preprocess MVTec 3D-AD')
     parser.add_argument('--root_path', type=str,
-                        default='./Real3D-AD-PCD/',
+                        default='./Real3D/',
                         help='The root path of the Real3D')
     parser.add_argument('--save_path', type=str,
-                        default='./real3d-2.5d/',
+                        default='./Real3D-multiview/',
                         help='The save path')
 
     # NOTE: You should run the preprocessing.py first
