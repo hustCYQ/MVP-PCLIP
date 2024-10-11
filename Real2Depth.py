@@ -10,7 +10,7 @@ import cv2
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 import os
 import glob
-
+import argparse
 
 filename = ""
 def PCA(data, correlation=False, sort=True):
@@ -212,9 +212,20 @@ def single_process(path,savepath,order,direction):
 
 
 if __name__ == '__main__':
-    root_path = "./Real3D-AD-PCD"
-    save_path = "./real3d-2.5d/"
 
+    parser = argparse.ArgumentParser(description='Preprocess MVTec 3D-AD')
+    parser.add_argument('--root_path', type=str,
+                        default='./Real3D-AD-PCD/',
+                        help='The root path of the Real3D')
+    parser.add_argument('--save_path', type=str,
+                        default='./real3d-2.5d/',
+                        help='The save path')
+
+    # NOTE: You should run the preprocessing.py first
+
+    args = parser.parse_args()
+    root_path = args.root_path
+    save_path = args.save_path
 
     class_name = ['airplane','candybar','car','chicken','diamond','duck','fish','gemstone','seahorse','shell','starfish','toffees']
 
