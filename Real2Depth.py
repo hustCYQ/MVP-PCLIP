@@ -218,7 +218,7 @@ if __name__ == '__main__':
                         default='./Real3D/',
                         help='The root path of the Real3D')
     parser.add_argument('--save_path', type=str,
-                        default='./Real3D-multiview/',
+                        default='./Real3D-mvtec/',
                         help='The save path')
 
     # NOTE: You should run the preprocessing.py first
