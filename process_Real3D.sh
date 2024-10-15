@@ -2,7 +2,7 @@
 python Real2Depth.py
 
 
-data_dir=../../datasets/Real3D
+data_dir=../../datasets/Real3D-mvtec
 save_dir=../../datasets/Real3D-multiview
 export DISPLAY=:0
 cd utils
