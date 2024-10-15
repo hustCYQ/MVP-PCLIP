@@ -87,9 +87,9 @@ If you find this project helpful for your research, please consider citing the f
 
 ```BibTex
 
-@inproceedings{AdaCLIP,
+@inproceedings{PCLIP,
   title={Towards Zero-shot Point Cloud Anomaly Detection: A Multi-View Projection Framework},
-  author={},
+  author={Yuqi Cheng, Yunkang Cao, Guoyang Xie, Zhichao Lu, Weiming Shen},
   booktitle={},
   year={2024}
 }
