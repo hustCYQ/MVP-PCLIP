@@ -50,7 +50,7 @@ sh process_MVTec3D.sh
 ```
 
 #### Real3D
-We first convert Real3D to Depth data **.tiff file**, and then project point clouds to multi_view images.
+We first convert Real3D to Depth data **.tiff file**, and then project point clouds to multi_view images. You also can get it from [BaidDu Drive](https://pan.baidu.com/s/1L0k7u7aVEQu_9cCbbh0ooA?pwd=uh8s)
 ```
 sh process_Real3D.sh
 ```
