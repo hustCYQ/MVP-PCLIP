@@ -35,11 +35,8 @@ You can choose to download **original** datasets and process them according to *
 |------------|------------------|------------------| ------------------|
 | MVTec3D    | [Google Drive] | [Baidu Drive](https://pan.baidu.com/s/1juZIAOqIwD4EWri1D5TiIw?pwd=flg9) | Original |
 | Real3D    | [Google Drive] | [Baidu Drive](https://pan.baidu.com/s/1OUoZA8hW8FoYBom5PP4WxQ?pwd=pwus) | Original |
-| MVTec3D-multiview    | [Google Drive] | [Baidu Drive](https://pan.baidu.com/s/1ZbN_Ede2LfgD4zPQfpe0rw?pwd=vz9g) | Processed |
-| Real3D-multiview    | [Google Drive] | [Baidu Drive](https://pan.baidu.com/s/1tTS4Ul0mjniXeCZXAZ44MA?pwd=fiu8) | Processed |
-
-
-
+| MVTec3D-multiview    | [Google Drive] | [Baidu Drive](https://pan.baidu.com/s/1UoIBl7vU8mIOhGYIE7Glhg?pwd=tmda) | Processed |
+| Real3D-multiview    | [Google Drive] | [Baidu Drive](https://pan.baidu.com/s/1us4e2zDefQ0G-jMG3VBboQ?pwd=wwf2) | Processed |
 
 
 ### Preprocess
