@@ -157,14 +157,19 @@ class MultiViewDataset(Dataset):
         idx = idx[0:self.views]
         view_image_paths = [view_image_paths[id] for id in idx]
         view_position_paths = [view_position_paths[id] for id in idx]
-        gt_index_path = xyz_root+"/gt_index.npy"
 
 
         view_images = [self.rgb_transform(Image.open(image_path).convert('RGB')) for image_path in view_image_paths]
         view_positions = [np.load(position_path) for position_path in view_position_paths]
-        gt_index = np.load(gt_index_path) 
+
 
         resized_organized_pc = resize_organized_pc(organized_pc)
+
+
+        unorganized_pc = organized_pc_to_unorganized_pc(resized_organized_pc.permute(1,2,0).numpy())
+        nonzero_indices = np.nonzero(np.all(unorganized_pc != 0, axis=1))[0]
+        gt_index = nonzero_indices
+        
 
         return resized_organized_pc, features, view_images, view_positions,gt_index
 
